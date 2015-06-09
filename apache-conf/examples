@@ -1,0 +1,7 @@
+#Serve up file directory
+Alias /data /data/outside/documentroot
+<Directory /data>
+     Order allow,deny
+     Allow from all
+</Directory>
+"http://example.com/data/file1.dat" now maps to /data/outside/documentroot/file1.dat
