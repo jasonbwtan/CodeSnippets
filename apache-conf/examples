@@ -5,3 +5,20 @@ Alias /data /data/outside/documentroot
      Allow from all
 </Directory>
 "http://example.com/data/file1.dat" now maps to /data/outside/documentroot/file1.dat
+
+#Set cookie if http://hostname:port/foo?dev=true
+RewriteCond %{QUERY_STRING} ^dev=true$ [NC]
+RewriteCond %{HTTP_COOKIE} !^.*dev.*$ [NC]
+RewriteRule .* - [co=dev:true:.127.0.0.1:7200:/]
+
+#Unset cookie if http://hostname:port/foo?dev=false
+RewriteCond %{QUERY_STRING} ^dev=false [NC]
+RewriteCond %{HTTP_COOKIE} ^.*dev.*$ [NC]
+RewriteRule .* - [co=dev:invalid:;:-1]
+
+#Set access by URL
+Alias /foo /opt/foo
+
+<Location /foo>
+        PathPrepend /
+</Location>
