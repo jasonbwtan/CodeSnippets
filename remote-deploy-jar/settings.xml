@@ -1,0 +1,14 @@
+	<profiles>
+		<profile>
+			<id>scp</id>
+			<properties>
+				<deployment.server>XX.XX.XX.XX</deployment.server>
+				<deployment.userName>user</deployment.userName>
+				<deployment.password>password</deployment.password>
+			</properties>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>scp</activeProfile>
+	</activeProfiles>
+</settings>
