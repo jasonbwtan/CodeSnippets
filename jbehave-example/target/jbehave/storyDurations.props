@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Aug 11 21:07:29 BST 2015
+jbehave/example/stories/stack_story.story=0
+threads=1
+total=0
+threadAverage=0

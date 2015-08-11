@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.fazlan.jbehave.exmaple.stories.CalculatorStories" time="1.032" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="24.76-b04"/>
+    <property name="user.country.format" value="GB"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/jbwtan/Development/Three/workspace/jbehave"/>
+    <property name="java.runtime.version" value="1.7.0_76-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/sz/lscc6dgj6jd633hc0txgjgwn7yg5jh/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="https.proxyHost" value="10.9.1.80"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/jbwtan/Development/Three/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8434491535467704435.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/jbwtan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="http.proxyPort" value="8080"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|uksrplyncfep01.baesystemsdetica.com|*.uksrplyncfep01.baesystemsdetica.com|csu.local|*.csu.local|baesystemsai.com|*.baesystemsai.com|detica.com|*.detica.com|hutchison3g.net|*.hutchison3g.net|connect|*.connect|deticaconnect|*.deticaconnect|dsep|*.dsep|onlinejira.three.co.uk|*.onlinejira.three.co.uk|onlinewiki.three.co.uk|*.onlinewiki.three.co.uk|212.124.245.174|192.168.9.1|localhost|*.localhost|gigselfservice|*.gigselfservice|192.168.1.0/32|*.192.168.1.0/32|192.168.0.0/24|*.192.168.0.0/24|192.160.0.0/13|*.192.160.0.0/13|192.128.0.0/11|*.192.128.0.0/11|192.0.0.0/9|*.192.0.0.0/9|128.0.0.0/2|*.128.0.0.0/2|0.0.0.0/32|*.0.0.0.0/32|192.168.1.2/31|*.192.168.1.2/31|192.168.1.4/30|*.192.168.1.4/30|192.168.1.8/29|*.192.168.1.8/29|192.168.1.16/28|*.192.168.1.16/28|192.168.1.32/27|*.192.168.1.32/27|192.168.1.64/26|*.192.168.1.64/26|192.168.1.128/25|*.192.168.1.128/25|192.168.2.0/23|*.192.168.2.0/23|192.168.4.0/22|*.192.168.4.0/22|192.168.8.0/21|*.192.168.8.0/21|192.168.16.0/20|*.192.168.16.0/20|192.168.32.0/19|*.192.168.32.0/19|192.168.64.0/18|*.192.168.64.0/18|192.168.128.0/17|*.192.168.128.0/17|192.169.0.0/16|*.192.169.0.0/16|192.170.0.0/15|*.192.170.0.0/15|192.172.0.0/14|*.192.172.0.0/14|192.176.0.0/12|*.192.176.0.0/12|192.192.0.0/10|*.192.192.0.0/10|193.36.230.64/27|*.193.36.230.64/27|193.36.230.0/26|*.193.36.230.0/26|193.36.228.0/23|*.193.36.228.0/23|193.36.224.0/22|*.193.36.224.0/22|193.36.192.0/19|*.193.36.192.0/19|193.36.128.0/18|*.193.36.128.0/18|193.36.0.0/17|*.193.36.0.0/17|193.32.0.0/14|*.193.32.0.0/14|193.0.0.0/11|*.193.0.0.0/11|193.36.230.97/32|*.193.36.230.97/32|193.36.230.98/31|*.193.36.230.98/31|193.36.230.100/30|*.193.36.230.100/30|193.36.230.104/29|*.193.36.230.104/29|193.36.230.112/28|*.193.36.230.112/28|193.36.230.128/25|*.193.36.230.128/25|193.36.231.0/24|*.193.36.231.0/24|193.36.232.0/21|*.193.36.232.0/21|193.36.240.0/20|*.193.36.240.0/20|193.37.0.0/16|*.193.37.0.0/16|193.38.0.0/15|*.193.38.0.0/15|193.40.0.0/13|*.193.40.0.0/13|193.48.0.0/12|*.193.48.0.0/12|193.64.0.0/10|*.193.64.0.0/10|193.128.0.0/9|*.193.128.0.0/9|194.0.0.0/7|*.194.0.0.0/7|196.0.0.0/6|*.196.0.0.0/6|200.0.0.0/5|*.200.0.0.0/5|208.0.0.0/4|*.208.0.0.0/4|254.0.0.0/8|*.254.0.0.0/8|252.0.0.0/7|*.252.0.0.0/7|248.0.0.0/6|*.248.0.0.0/6|240.0.0.0/5|*.240.0.0.0/5|224.0.0.0/4|*.224.0.0.0/4"/>
+    <property name="user.home" value="/Users/jbwtan"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="jbwtan"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.0.5/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s /Users/jbwtan/.m2/settings-three.xml clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_76"/>
+    <property name="java.ext.dirs" value="/Users/jbwtan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="http.proxyHost" value="10.9.1.80"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven-3.0.5"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="https.proxyPort" value="8080"/>
+    <property name="socksNonProxyHosts" value="local|*.local|uksrplyncfep01.baesystemsdetica.com|*.uksrplyncfep01.baesystemsdetica.com|csu.local|*.csu.local|baesystemsai.com|*.baesystemsai.com|detica.com|*.detica.com|hutchison3g.net|*.hutchison3g.net|connect|*.connect|deticaconnect|*.deticaconnect|dsep|*.dsep|onlinejira.three.co.uk|*.onlinejira.three.co.uk|onlinewiki.three.co.uk|*.onlinewiki.three.co.uk|212.124.245.174|192.168.9.1|localhost|*.localhost|gigselfservice|*.gigselfservice|192.168.1.0/32|*.192.168.1.0/32|192.168.0.0/24|*.192.168.0.0/24|192.160.0.0/13|*.192.160.0.0/13|192.128.0.0/11|*.192.128.0.0/11|192.0.0.0/9|*.192.0.0.0/9|128.0.0.0/2|*.128.0.0.0/2|0.0.0.0/32|*.0.0.0.0/32|192.168.1.2/31|*.192.168.1.2/31|192.168.1.4/30|*.192.168.1.4/30|192.168.1.8/29|*.192.168.1.8/29|192.168.1.16/28|*.192.168.1.16/28|192.168.1.32/27|*.192.168.1.32/27|192.168.1.64/26|*.192.168.1.64/26|192.168.1.128/25|*.192.168.1.128/25|192.168.2.0/23|*.192.168.2.0/23|192.168.4.0/22|*.192.168.4.0/22|192.168.8.0/21|*.192.168.8.0/21|192.168.16.0/20|*.192.168.16.0/20|192.168.32.0/19|*.192.168.32.0/19|192.168.64.0/18|*.192.168.64.0/18|192.168.128.0/17|*.192.168.128.0/17|192.169.0.0/16|*.192.169.0.0/16|192.170.0.0/15|*.192.170.0.0/15|192.172.0.0/14|*.192.172.0.0/14|192.176.0.0/12|*.192.176.0.0/12|192.192.0.0/10|*.192.192.0.0/10|193.36.230.64/27|*.193.36.230.64/27|193.36.230.0/26|*.193.36.230.0/26|193.36.228.0/23|*.193.36.228.0/23|193.36.224.0/22|*.193.36.224.0/22|193.36.192.0/19|*.193.36.192.0/19|193.36.128.0/18|*.193.36.128.0/18|193.36.0.0/17|*.193.36.0.0/17|193.32.0.0/14|*.193.32.0.0/14|193.0.0.0/11|*.193.0.0.0/11|193.36.230.97/32|*.193.36.230.97/32|193.36.230.98/31|*.193.36.230.98/31|193.36.230.100/30|*.193.36.230.100/30|193.36.230.104/29|*.193.36.230.104/29|193.36.230.112/28|*.193.36.230.112/28|193.36.230.128/25|*.193.36.230.128/25|193.36.231.0/24|*.193.36.231.0/24|193.36.232.0/21|*.193.36.232.0/21|193.36.240.0/20|*.193.36.240.0/20|193.37.0.0/16|*.193.37.0.0/16|193.38.0.0/15|*.193.38.0.0/15|193.40.0.0/13|*.193.40.0.0/13|193.48.0.0/12|*.193.48.0.0/12|193.64.0.0/10|*.193.64.0.0/10|193.128.0.0/9|*.193.128.0.0/9|194.0.0.0/7|*.194.0.0.0/7|196.0.0.0/6|*.196.0.0.0/6|200.0.0.0/5|*.200.0.0.0/5|208.0.0.0/4|*.208.0.0.0/4|254.0.0.0/8|*.254.0.0.0/8|252.0.0.0/7|*.252.0.0.0/7|248.0.0.0/6|*.248.0.0.0/6|240.0.0.0/5|*.240.0.0.0/5|224.0.0.0/4|*.224.0.0.0/4"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|uksrplyncfep01.baesystemsdetica.com|*.uksrplyncfep01.baesystemsdetica.com|csu.local|*.csu.local|baesystemsai.com|*.baesystemsai.com|detica.com|*.detica.com|hutchison3g.net|*.hutchison3g.net|connect|*.connect|deticaconnect|*.deticaconnect|dsep|*.dsep|onlinejira.three.co.uk|*.onlinejira.three.co.uk|onlinewiki.three.co.uk|*.onlinewiki.three.co.uk|212.124.245.174|192.168.9.1|localhost|*.localhost|gigselfservice|*.gigselfservice|192.168.1.0/32|*.192.168.1.0/32|192.168.0.0/24|*.192.168.0.0/24|192.160.0.0/13|*.192.160.0.0/13|192.128.0.0/11|*.192.128.0.0/11|192.0.0.0/9|*.192.0.0.0/9|128.0.0.0/2|*.128.0.0.0/2|0.0.0.0/32|*.0.0.0.0/32|192.168.1.2/31|*.192.168.1.2/31|192.168.1.4/30|*.192.168.1.4/30|192.168.1.8/29|*.192.168.1.8/29|192.168.1.16/28|*.192.168.1.16/28|192.168.1.32/27|*.192.168.1.32/27|192.168.1.64/26|*.192.168.1.64/26|192.168.1.128/25|*.192.168.1.128/25|192.168.2.0/23|*.192.168.2.0/23|192.168.4.0/22|*.192.168.4.0/22|192.168.8.0/21|*.192.168.8.0/21|192.168.16.0/20|*.192.168.16.0/20|192.168.32.0/19|*.192.168.32.0/19|192.168.64.0/18|*.192.168.64.0/18|192.168.128.0/17|*.192.168.128.0/17|192.169.0.0/16|*.192.169.0.0/16|192.170.0.0/15|*.192.170.0.0/15|192.172.0.0/14|*.192.172.0.0/14|192.176.0.0/12|*.192.176.0.0/12|192.192.0.0/10|*.192.192.0.0/10|193.36.230.64/27|*.193.36.230.64/27|193.36.230.0/26|*.193.36.230.0/26|193.36.228.0/23|*.193.36.228.0/23|193.36.224.0/22|*.193.36.224.0/22|193.36.192.0/19|*.193.36.192.0/19|193.36.128.0/18|*.193.36.128.0/18|193.36.0.0/17|*.193.36.0.0/17|193.32.0.0/14|*.193.32.0.0/14|193.0.0.0/11|*.193.0.0.0/11|193.36.230.97/32|*.193.36.230.97/32|193.36.230.98/31|*.193.36.230.98/31|193.36.230.100/30|*.193.36.230.100/30|193.36.230.104/29|*.193.36.230.104/29|193.36.230.112/28|*.193.36.230.112/28|193.36.230.128/25|*.193.36.230.128/25|193.36.231.0/24|*.193.36.231.0/24|193.36.232.0/21|*.193.36.232.0/21|193.36.240.0/20|*.193.36.240.0/20|193.37.0.0/16|*.193.37.0.0/16|193.38.0.0/15|*.193.38.0.0/15|193.40.0.0/13|*.193.40.0.0/13|193.48.0.0/12|*.193.48.0.0/12|193.64.0.0/10|*.193.64.0.0/10|193.128.0.0/9|*.193.128.0.0/9|194.0.0.0/7|*.194.0.0.0/7|196.0.0.0/6|*.196.0.0.0/6|200.0.0.0/5|*.200.0.0.0/5|208.0.0.0/4|*.208.0.0.0/4|254.0.0.0/8|*.254.0.0.0/8|252.0.0.0/7|*.252.0.0.0/7|248.0.0.0/6|*.248.0.0.0/6|240.0.0.0/5|*.240.0.0.0/5|224.0.0.0/4|*.224.0.0.0/4"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="run" classname="org.fazlan.jbehave.exmaple.stories.CalculatorStories" time="1.032"/>
+</testsuite>
