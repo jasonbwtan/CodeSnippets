@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>BAE Systems Applied Intelligence</title>
+	<link rel="stylesheet" type="text/css" href="datatables/media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="datatables/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="datatables/resources/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css" class="init">
+
+	</style>
+	<script type="text/javascript" language="javascript" src="datatables/media/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="datatables/media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="datatables/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="datatables/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+$(document).ready(function() {
+	$('#example').dataTable( {
+		"ajax": "http://www.googledrive.com/host/0B6mKpL41PJGcX0pTdmRIV1AtNm8",
+		"columns": [
+			{ "data": "name" },
+			{ "data": "position" },
+			{ "data": "office" },
+			{ "data": "extn" },
+			{ "data": "start_date" },
+			{ "data": "salary" }
+		]
+	} );
+} );
+	</script>
+
+	<!-- try hackst.com to test REST methods -->
+	
+</head>
+
+<body class="dt-example">
+				<img src="logo.jpg" class="img-responsive pull-right" alt="Responsive image">
+
+	<div class="container" style="padding-bottom: 100px;">
+	<div class="col-md-12">
+			<h1>BAE Systems Applied Intelligence <span>REST Client</span></h1> 
+			<hr>
+			<div class="info">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+				<p>This can be done quite simply by using the <a href="//datatables.net/reference/option/columns.data"><code class="option" title=
+				"DataTables initialisation option">columns.data<span>DT</span></code></a> option which you use to tell DataTables which property to use from the data source object
+				for each column.</p>
+
+				<p>In this example the Ajax source returns an array of objects, which DataTables uses to display the table. The structure of the row's data source in this example
+				is:</p>
+
+			</div>
+	</div>
+<div class="col-md-4">
+<form role="form">
+   <div class="form-group">
+      <label for="name">Country</label>
+      <select class="form-control" onclick="getCountries(); this.onclick=null;" id="countryz" name="countryz">
+      </select>
+   </div>
+    <div class="form-group">
+      <label for="name">Postcode</label>
+	<div class="input-group">
+	   <input type="text" class="form-control">
+	   <span class="input-group-btn">
+			<button class="btn btn-default" type="button">Go!</button>
+	   </span>
+	</div>
+      <input type="text" class="form-control" id="name">
+   </div>
+</form>
+
+</div>			
+
+<div class="col-md-4">
+  <form role="form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of birth:</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+  </form>
+</div>
+<div class="col-md-4">
+  <form role="form">
+    <div class="form-group">
+      <label for="name">Email:</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+  </form>
+</div>
+</div>
+
+<script type="text/javascript">
+function getCountries()
+{
+
+	$.getJSON("https://10.210.64.4:4443/RESTfulExample/rest/json/metallica/getcountries", function(data) {
+		var vals = [];
+				vals = data.countries.split(",");		
+		
+		var $secondChoice = $("#countryz");
+		$secondChoice.empty();
+		$.each(vals, function(index, value) {
+			$secondChoice.append("<option>" + value + "</option>");
+		});
+
+	});
+ }
+ </script> 
+
+<div class="container">		
+			<table id="example" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Extn.</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Extn.</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</tfoot>
+			</table>
+
+			
+	   <span class="input-group-btn">
+			<button class="btn btn-default" type="button" id="getsharepoint">Ajax GET Sharepoint List</button>	   
+			<button class="btn btn-default" type="button" id="get">Ajax GET</button>
+			<button class="btn btn-default" type="button" id="put">Ajax PUT</button>
+			<button class="btn btn-default" type="button" id="post">Ajax POST</button>
+	   </span>
+       <!-- Dynamic JS triggered HTML -->
+	   <div id="resultget"></div>	   
+	   <div id="result"></div>
+
+<script type="text/javascript">
+    $('#getsharepoint').click(function(){ 
+		$.ajax({
+			url: "http://winssharepoint:44917/_api/web/lists",
+			method: 'GET',
+			dataType: "json",
+			contentType: "application/json",
+			beforeSend: function (XMLHttpRequest) {
+				XMLHttpRequest.setRequestHeader("Accept", "application/json; odata=verbose");
+				},
+			cache: true,
+			error: function (data) {              alert(JSON.stringify(data))           },
+			success: function (data) {       alert(JSON.stringify(data))                }
+        });
+    });
+
+
+    $('#get').click(function(){ 
+         $.ajax({
+             type: "GET",
+			 dataType: "json",
+			 contentType: "application/json",
+             url: "http://localhost:8080/rest/hello/message?param=hi",
+             success: function(data){        
+				 result = "GET Done";
+				 document.getElementById('result').innerHTML = result+JSON.stringify(data);
+             },
+			 error: function(data){
+				 document.getElementById('result').innerHTML = JSON.stringify(data);			 
+			 }
+         });
+    });
+
+    $('#put').click(function(){
+	var putdata = { "singer" :"Shania Twain",
+                    "title"  :"Man I feel like a woman"
+	}
+         $.ajax({
+             type: "PUT",
+			 dataType: "json",
+			 contentType: "application/json",
+             data: JSON.stringify(putdata),
+             url: "https://10.210.64.4:4443/RESTfulExample/rest/json/metallica/put",
+             success: function(data){        
+				 result = "PUT Done"
+				 document.getElementById('result').innerHTML = result+JSON.stringify(data);
+             },
+			 error: function(data){
+				 document.getElementById('result').innerHTML = JSON.stringify(data);			 
+			 }
+         });
+
+    });
+
+var jsonData = {
+    "singer" : "Metallica",
+	"title" : "Fade To Black"
+};
+
+$('#post').click(function(){ 
+	$.ajax({
+	  type: 'POST',
+	  dataType: 'json',
+	  contentType: "application/json",
+	  url: "https://10.210.64.4:4443/RESTfulExample/rest/json/metallica/post",
+	  data : JSON.stringify( jsonData ),
+	  success: function(data) {
+		 result = "POST Done"
+		 document.getElementById('result').innerHTML = result+JSON.stringify(data);	
+	  },
+	  error: function(data){
+		 document.getElementById('result').innerHTML = JSON.stringify(data);			 
+	  }  
+	});
+});
+	
+</script>			
+	</div>
+
+
+
+ 		
+</body>
+</html>	
