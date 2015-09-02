@@ -1,0 +1,31 @@
+dn: cn=Robert Smith,ou=people,dc=example,dc=com
+objectclass: inetOrgPerson
+cn: Robert Smith
+cn: Robert J Smith
+cn: bob smith
+sn: smith
+uid: rjsmith
+userpassword: rJsmitH
+carlicense: HISCAR 123
+homephone: 555-111-2222
+mail: r.smith@example.com
+alias: rsmith@example.com
+alias: bob.smith@example.com
+description: nice hair
+ou: Human Resources
+
+dn: cn=John Doe,ou=people,dc=example,dc=com
+objectclass: inetOrgPerson
+cn: John Doe
+cn: John Walker Doe
+cn: Johnny
+sn: Doe
+uid: jdoe
+userpassword: topsecret
+carlicense: AKAHH 123
+homephone: 123-458-362
+mail: j.doe@example.com
+alias: jdoe@example.com
+alias: john.doe@example.com
+description: cool guy
+ou: Sales
