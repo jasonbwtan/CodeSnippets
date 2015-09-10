@@ -14,3 +14,7 @@ Allows easy testing of servlets with an option to run your servlet under a run j
 ### FindBugs
 Static analysis tool
 ### CheckStyle
+
+### Eclipse setup checklist
+Ensure latest oracle JDK as installed java library for compiler compliance flexibility
+Add remote archetype catalog for third party archetypes - https://repo1.maven.org/maven2/archetype-catalog.xml
