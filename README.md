@@ -16,5 +16,5 @@ Static analysis tool
 ### CheckStyle
 
 ### Eclipse setup checklist
-1.Ensure latest oracle JDK as installed java library for compiler compliance flexibility
-2.Add remote archetype catalog for third party archetypes - https://repo1.maven.org/maven2/archetype-catalog.xml
+⋅⋅* Ensure latest oracle JDK as installed java library for compiler compliance flexibility
+⋅⋅* Add remote archetype catalog for third party archetypes - https://repo1.maven.org/maven2/archetype-catalog.xml
