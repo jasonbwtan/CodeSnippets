@@ -18,3 +18,12 @@ Static analysis tool
 ### Eclipse setup checklist
 + Ensure latest oracle JDK as installed java library for compiler compliance flexibility
 + Add remote archetype catalog for third party archetypes - https://repo1.maven.org/maven2/archetype-catalog.xml
+
+
+### Windows setup
+
+netstat : findstr 8080
+
+Setup vim
+http://www.vim.org/download.php#pc
+http://www.expatpaul.eu/2014/04/vim-in-powershell/
