@@ -12,7 +12,7 @@ public class EmbeddedJettyMain {
 		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		context.setContextPath("/");
 
-		Server jettyServer = new Server(7070);
+		Server jettyServer = new Server(8888);
 		jettyServer.setHandler(context);
 
 		ServletHolder jerseyServlet = context.addServlet(
