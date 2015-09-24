@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.8.1">
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\MyApplication.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\Book.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\Bookstore.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\CD.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\Happy.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\Item.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\main\java\org\glassfish\jersey\examples\bookstore\webapp\resource\Track.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\test\java\org\glassfish\jersey\examples\bookstore\webapp\resource\BookstoreTest.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\test\java\org\glassfish\jersey\examples\bookstore\webapp\resource\ItemTest.java">
+</file>
+<file name="C:\Users\Jason\heroku\jersey-heroku-bookstore\src\test\java\org\glassfish\jersey\examples\bookstore\webapp\resource\TestSupport.java">
+</file>
+</checkstyle>

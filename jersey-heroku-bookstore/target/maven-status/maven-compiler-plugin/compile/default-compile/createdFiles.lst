@@ -1,0 +1,7 @@
+org\glassfish\jersey\examples\bookstore\webapp\resource\Item.class
+org\glassfish\jersey\examples\bookstore\webapp\resource\Book.class
+org\glassfish\jersey\examples\bookstore\webapp\resource\Bookstore.class
+org\glassfish\jersey\examples\bookstore\webapp\resource\Happy.class
+org\glassfish\jersey\examples\bookstore\webapp\MyApplication.class
+org\glassfish\jersey\examples\bookstore\webapp\resource\CD.class
+org\glassfish\jersey\examples\bookstore\webapp\resource\Track.class
