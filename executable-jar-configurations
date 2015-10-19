@@ -33,3 +33,38 @@
 					</execution>
 				</executions>
 			</plugin>
+2. mvn package
+
+			<!-- Includes the runtime dependencies -->
+			<plugin>
+				<groupId>org.dstovall</groupId>
+				<artifactId>onejar-maven-plugin</artifactId>
+				<version>1.4.4</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>one-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		  <!-- Make this jar executable -->
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<configuration>
+			   <archive>
+			     <manifest>
+				<mainClass>uk.co.three.reporters.ProductPageReporter</mainClass>
+			     </manifest>
+			   </archive>
+			</configuration>
+		  </plugin>
+		  
+		  	<!-- One-Jar is in the googlecode repository -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>onejar-maven-plugin.googlecode.com</id>
+			<url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
+		</pluginRepository>
+	</pluginRepositories>
