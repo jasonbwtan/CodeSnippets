@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import base.components.Calculator;
+import base.components.Car;
 import base.config.BeanConfig;
 import base.model.HelloWorld;
 import base.model.Person;
@@ -20,5 +21,7 @@ public class Main {
 		
 		Calculator calculator = (Calculator) context.getBean("calculator");
 		calculator.makeAnOperation();
+		
+		
 	}
 }
