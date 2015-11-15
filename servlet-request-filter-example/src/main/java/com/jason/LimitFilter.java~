@@ -43,8 +43,7 @@ public class LimitFilter implements Filter {
 //            synchronized (lock) {
 //                count--;
 //            }           
-        	count.decrementAndGet();
-	}
+        }
     }
 
 	@Override
