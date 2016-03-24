@@ -10,6 +10,7 @@ Allows easy start stop of tomcat from within IDE (combines well with tomcat7-mav
 Allows decompiling of JARS within IDE
 ### Eclipse Jetty Integration - http://eclipse-jetty.github.io/update/
 Allows easy testing of servlets with an option to run your servlet under a run jetty configuration
+### Spring STS plugins (Or complete IDE)
 
 ### FindBugs
 Static analysis tool
